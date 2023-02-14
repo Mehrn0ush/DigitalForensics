@@ -19,3 +19,7 @@ while ($thumbcacheResults.Read())
 
 # Close the thumbcache database file
 $thumbcache.Close()
+
+$results | Export-Csv -Path C:\output.csv -NoTypeInformation
+
+
